@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    {% for entrada in entrada.object_list %}
+        <div class="post">
+
+            <h1><a href="" >{{entrada.titulo}} </a></h1>
+
+            <p>{{entrada.contenido}}</p>
+
+                <div class="date">
+                    {{entrada.fecha}}        
+                </div>    
+        </div>
+    {% endfor %}
+    
+{% endblock content %}
+
+                
